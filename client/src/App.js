@@ -45,7 +45,8 @@ function App() {
     formData.append("Speechfile", selectedFile);
 
     try {
-      const response = await axios.post("http://127.0.0.1:5000/Predict", formData, {
+      const response = await axios.post("https://mindsync-5.onrender.com/Predict", formData, {
+
         headers: { "Content-Type": "multipart/form-data" },
       });
 
